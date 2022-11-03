@@ -897,7 +897,7 @@ dependencies = [
 [[package]]
 name = "secure-survey"
 version = "0.1.0"
-source = "git+https://github.com/medelium/secure-suvey-rs.git#e5cc232e451d4e746833d05d58646abb6c5081fb"
+source = "git+https://github.com/medelium/secure-suvey-rs.git#9b34b9d4c3eb0ace57dd76e0822b96af60ac405c"
 dependencies = [
  "curv-kzen",
  "kzen-paillier",
