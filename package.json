@@ -1,8 +1,11 @@
 {
-  "name": "secure-survey-crypto-node",
+  "name": "@medelium/secure-survey-crypto",
   "version": "0.1.0",
   "description": "Rust HE node bindings",
   "main": "index.node",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
     "build-debug": "npm run build --",
@@ -13,7 +16,19 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "cargo-cp-artifact": "^0.1"
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-angular": "^17.1.0",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@commitlint/cz-commitlint": "^17.1.2",
+    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^8.0.6",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
+    "cargo-cp-artifact": "^0.1",
+    "husky": "^8.0.1",
+    "semantic-release": "^19.0.5"
   },
   "repository": {
     "type": "git",
@@ -22,5 +37,10 @@
   "bugs": {
     "url": "https://github.com/medelium/secure-survey-crypto-node/issues"
   },
-  "homepage": "https://github.com/medelium/secure-survey-crypto-node#readme"
+  "homepage": "https://github.com/medelium/secure-survey-crypto-node#readme",
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  }
 }
