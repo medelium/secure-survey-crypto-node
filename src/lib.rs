@@ -40,7 +40,7 @@ fn add_many(mut cx: FunctionContext) -> JsResult<JsString> {
     let cyphers = cx.argument::<JsArray>(1)?;
 
     let ek = load_encryption_key(&*encryption_key);
-    let mut ciphers_owned: Vec<EncodedCiphertext<u64>> = cyphers
+    let ciphers_owned: Vec<EncodedCiphertext<u64>> = cyphers
         .to_vec(&mut cx)
         .unwrap()
         .into_iter()
